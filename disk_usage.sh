@@ -8,7 +8,7 @@ if [ "$USAGE" -gt "$THRESHOLD" ]; then
     MESSAGE="[$NOW] ⚠️ ALERT: Disk usage is at ${USAGE}% on your server!"
     echo "$MESSAGE"
     # Send to Discord
-    curl -H "Content-Type: application/json" -X POST -d "{\"content\": \"$MESSAGE\"}" $WEBHOOK
+    curl -H "Content-Type: application/json" -X POST -d "{\"content\": \"$MESSAGE\"}" $WEBHOOK=$DISCORD_WEBHOOK
 else
     echo "[$NOW] ✅ System Healthy: Disk usage is at ${USAGE}%."
 fi

@@ -16,4 +16,5 @@ System-Guardian is a lightweight monitoring suite designed to track system healt
 ### System Status Notifications
 ![Discord Alert Screenshot](./assets/alert.png)
 *Figure 1: Discord interface showing timestamped Green (Healthy) and Red/Yellow (Critical) system alerts.*
-To view the schedule, run `Crontab -l`
+
+##To view the schedule, run `Crontab -l`
